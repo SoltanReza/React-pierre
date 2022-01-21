@@ -1,0 +1,42 @@
+@import '../../scss/colors.scss';
+
+.boxfield-box{
+    width: 1em;
+    height: 1em;
+    max-height: 1em;
+    min-width: 1em;
+    line-height: 0.7em;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 0.2em;
+    margin-bottom: 0.09em;
+    cursor: pointer;
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: linear 0.15s all;
+        border-radius: inherit;
+        color: $grey-lighten-3;
+        border: 1px solid;
+    }
+    &::after {
+        background: currentColor;
+        transform: scale(0);
+    }
+}
+input:checked ~ .boxfield-box{
+    &::after, &::before {
+        color: $primary;
+    }
+    &::after {
+        transform: scale(0.6);
+    }
+}
+
+input[type = "radio"] ~ .boxfield-box {
+    border-radius: 50%;
+}

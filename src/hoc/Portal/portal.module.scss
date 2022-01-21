@@ -1,0 +1,13 @@
+@import '../../scss/colors.scss';
+
+.modal {
+    z-index: 4;
+}
+
+@media (max-width: 991px) {
+    .modal{
+        background: $dark;
+        opacity: 0.5;
+        z-index: 9;
+    }
+}

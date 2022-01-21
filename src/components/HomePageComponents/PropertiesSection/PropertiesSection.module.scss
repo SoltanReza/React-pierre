@@ -1,0 +1,15 @@
+.main{
+    max-width: 44rem;
+}
+.properties >div{
+    min-width: calc(25% - 1.5rem);
+    @media (max-width: 1300px) {
+        min-width: calc(33% - 1.5rem);
+    }
+    @media (max-width: 900px) {
+        min-width: calc(45% - 1.5rem);
+    }
+    @media (max-width: 500px) {
+        min-width: 70%;
+    }
+}

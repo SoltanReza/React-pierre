@@ -1,0 +1,18 @@
+.root{
+    transition: linear 0.3s all;
+    overflow: auto hidden;
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+    &.active{
+        scroll-behavior: smooth;
+    }
+    >* {
+        &:first-child [class *= "prev-btn"]{
+            display: none;
+        }
+        &:last-child [class *= "next-btn"]{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../../scss/colors.scss';
+
+.root{
+    min-width: 100%;
+    &::after{
+        content: '';
+        background: rgba($color: $dark, $alpha: 0.1);
+    }
+}
+h1 {
+    letter-spacing: 1rem;
+}
+.root, .root::after, .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.title{
+    max-width: 15em;
+}
+.subtitle{
+    max-width: 25em;
+}

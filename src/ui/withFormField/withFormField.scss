@@ -1,0 +1,69 @@
+@import '../../scss/colors.scss';
+
+.FormField-Root{
+    gap: 0.5em;
+    color: $grey;
+    &:not(.FormField-Root-Normal) {
+        padding: 1rem;
+        .Form-Label {
+            left: 1rem;
+        }
+        .Form-Border {
+            border: 1px solid;
+        }
+    }
+    span, .FormField {
+        text-transform: inherit;
+    }
+}
+
+.FormField-Root-Normal{
+    padding: 1rem 0;
+    .Form-Label {
+        left: 0;
+    }
+    .Form-Border {
+        border-bottom: 1px solid;
+    }
+}
+
+
+.FormField {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    // color: red;
+}
+
+
+
+.FormField:focus  ~ span{
+    color: $primary;
+}
+
+.Form-Label {
+    background: $light;
+    transform-origin: left top;
+    transition: linear 0.1s all;
+    top: 1em;
+}
+
+.FormField:focus, .FormField:not(:placeholder-shown) {
+    ~ .Form-Label {
+        top: -0.5em;
+        transform: scale(0.7);
+    }
+}
+
+
+.start-endorament{
+    order: -1;
+    min-width: 1em;
+    max-width: 1em;
+    ~ .Form-Label {
+        margin-left: 1.5em;
+    }
+}

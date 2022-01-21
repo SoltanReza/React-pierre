@@ -1,0 +1,25 @@
+.button {
+    background: transparent;
+}
+.wrapper {
+    transition: linear 0.3s all;
+    transform-origin: top center;
+    &:not(.active) {
+        overflow: hidden;
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    &.active {
+        max-height: 100vh;
+        margin-top: 1rem;
+    }
+}
+
+
+.icon{
+    transition: linear 0.3s all;
+    &.active {
+        transform: rotate(-90deg);
+    }
+}

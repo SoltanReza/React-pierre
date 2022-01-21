@@ -1,0 +1,41 @@
+$height: 7rem;
+
+.nav-height {
+    height: $height;
+    &.active {
+        height: $height - 1rem;
+    }
+}
+.nav-padding {
+    padding-top: $height;
+}
+.HeaderV2 {
+    transition-delay: 0.3s;
+    max-height: $height;
+    &, * {
+        transition: linear 0.3s all;
+    }
+    &.active {
+        max-height: 100vh;
+        .nav-height {
+            height: $height - 1rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .HeaderV2 {
+        max-height: $height - 1rem;
+        &.active {
+            .nav-height {
+                height: $height - 2rem;
+            }
+        }
+    }
+    .nav-height {
+        height: $height - 1rem;
+    }
+    .nav-padding {
+        padding-top: $height - 1rem;
+    }
+}

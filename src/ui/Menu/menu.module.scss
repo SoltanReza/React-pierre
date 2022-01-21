@@ -1,0 +1,29 @@
+.root{
+    min-width: 12rem;
+    border-radius: 0.2rem;
+    max-height: calc(var(--app-height) - 7rem);
+    overflow: auto;
+    position: absolute;
+    z-index: 5;
+}
+
+@media (max-width: 991px) {
+    .root {
+        left: 50% !important;
+        right: initial !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%);
+        max-width: calc(100% - 2.5rem);
+        min-width: 20rem;
+        margin: 0 !important;
+        overflow: auto;
+        position: fixed;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 570px) {
+    .root {
+        max-width: calc((100% - 2.5rem));
+    }
+}

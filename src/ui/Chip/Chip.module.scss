@@ -1,0 +1,14 @@
+@import '../../scss/colors.scss';
+
+.root {
+    cursor: pointer;
+    color: $grey;
+    >span {
+        border: 1px solid $grey-lighten-2;
+        border-radius: 2em;
+    }
+    >input:checked ~ span, >span:hover {
+        color: $primary;
+        border-color: currentColor;
+    }
+}

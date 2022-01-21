@@ -1,0 +1,28 @@
+.img{
+    width: 30rem;
+    background: url('../../../assets/3.jpeg') center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: '';
+        display: block;
+        padding-top: 110%;
+    }
+}
+
+@media (min-width: 991px) {
+    .main {
+        margin-left: -12rem;
+        padding-left: 12rem;
+    }
+    .blog{
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .root{
+        width: 100%;
+    }
+}

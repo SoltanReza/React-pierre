@@ -1,0 +1,46 @@
+.tx-primary{
+    color: $primary !important;
+}
+.bg-primary{
+    background-color: $primary !important;
+}
+
+.tx-dark{
+    color: $dark !important;
+}
+.bg-dark{
+    background-color: $dark !important;
+}
+
+.tx-light{
+    color: $light !important;
+}
+.bg-light{
+    background-color: $light !important;
+}
+
+.tx-grey{
+    color: $grey !important;
+}
+.bg-grey{
+    background-color: $grey !important;
+}
+.tx-grey-lighten-4{
+    color: $grey-lighten-4 !important;
+}
+.bg-grey-lighten-4{
+    background-color: $grey-lighten-4 !important;
+}
+
+.tx-danger{
+    color: $danger !important;
+}
+.bg-danger{
+    background-color: $danger !important;
+}
+
+@media (max-width: 767px) {
+    .bg-sm-light {
+        background: $light;
+    }
+}

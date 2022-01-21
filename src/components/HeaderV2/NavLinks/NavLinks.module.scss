@@ -1,0 +1,67 @@
+@import '../../../scss/colors.scss';
+
+.root{
+    transition: linear 0.3s all;
+    max-height: 1000px;
+    border-top: 1px solid $grey-lighten-3;
+    &:not(.active) {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.links{
+    padding: 4rem;
+    h2 {
+        margin: 0 0 2rem 0;
+    }
+    >ul {
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        display: grid;
+        gap: 0.5rem;
+        a {
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: '';
+                display: block;
+                height: 0.15em;
+                background: $primary;
+                transition: linear 0.2s all;
+                width: 0;
+                margin-top: 0.2em;
+            }
+            &:hover, &[class *= "active"] {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &:not(:last-child) {
+        border-right: 1px solid $grey-lighten-3;
+    }
+}
+@media (max-width: 1050px) {
+    .links {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .links {
+        padding: 1.5rem;
+        border: none !important;
+    }
+}
+@media (max-width: 767px) {
+    .menu {
+        overflow: auto;
+    }
+    .links {
+        padding: 1rem 0;
+    }
+}

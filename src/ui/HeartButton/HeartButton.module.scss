@@ -1,0 +1,15 @@
+@import '../../scss/colors.scss';
+
+.root {
+    i {
+        display: none;
+    }
+    input {
+        &:checked ~ [class *= "fas"] {
+            display: block;
+        }
+        &:not(:checked) ~ [class *= "far"] {
+            display: block;
+        }
+    }
+}

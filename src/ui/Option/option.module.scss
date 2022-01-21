@@ -1,0 +1,36 @@
+@import '../../scss/colors.scss';
+
+.root {
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba($color: $grey, $alpha: 0.2);
+    }
+}
+
+.label::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: currentColor;
+    opacity: 0;
+}
+
+.root:hover .label, .input:focus ~ .label {
+    color: $primary;
+    &::after{
+        opacity: 0.05;
+    }
+}
+.input{
+    display: none;
+    &:checked ~ .label{
+        color: $primary;
+        &::after{
+            opacity: 0.05;
+        }
+    }
+}

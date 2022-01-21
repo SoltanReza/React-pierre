@@ -1,0 +1,108 @@
+.no-select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+}
+
+.btn-normal {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.btn-hover {
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background: currentColor;
+        opacity: 0;
+    }
+    &:hover::before{
+        opacity: 0.1;
+    }
+    &.active, &:active {
+        &::before {
+            opacity: 0.05;
+        }
+    }
+}
+
+.btn-text {
+    @extend .btn-normal;
+    border-radius: 2em;
+    gap: 1em;
+    color: $primary;
+    background: transparent;
+    padding: 0;
+    &:hover, &.active, &:active {
+        text-decoration: underline;
+    }
+}
+.btn-icon{
+    font-size: 0.75rem;
+    @extend .btn-hover, .btn-normal;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: transparent;
+    i {
+        font-size: inherit;
+        font-size: 1.25em;
+    }
+    &.no-spacing{
+        margin: -1em;
+    }
+}
+
+.border-rounded{
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    min-width: 2em;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    font-size: 0.9rem;
+    height: 5.5rem;
+    padding: 0 3rem;
+}
+
+.btn-form, .btn-primary {
+    @extend .btn-hover, .btn-normal;
+    text-transform: uppercase;
+    color: $light;
+    background: $primary;
+    gap: 2em;
+    font-size: 0.9rem;
+}
+.btn-form {
+    padding: calc(1rem - 0.5px) 2rem;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 1100px) {
+    .btn-primary {
+        height: 4.75em;
+        padding: 0 3rem;
+    }
+}

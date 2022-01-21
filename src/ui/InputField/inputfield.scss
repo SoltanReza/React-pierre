@@ -1,0 +1,15 @@
+@import '../../scss/colors.scss';
+
+.input-field-label{
+    grid-row: 1/2;
+}
+.input-field{
+    border: 1px solid $grey-lighten-3;
+    outline: none;
+    padding: 0.256em 0.26em;
+    background: transparent;
+    font-size: inherit;
+    &:focus {
+        border-color: $primary;
+    }
+}

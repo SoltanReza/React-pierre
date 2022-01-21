@@ -1,0 +1,16 @@
+.root{
+    min-width: 100%;
+}
+.root:last-child {
+    .nextbtn{
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    .card{
+        max-width: 24rem;
+    }
+    .main{
+        min-height: var(--app-height);
+    }
+}

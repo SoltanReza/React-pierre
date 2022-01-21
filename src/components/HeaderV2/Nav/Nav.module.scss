@@ -1,0 +1,31 @@
+@import '../../../scss/colors.scss';
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.logo {
+    height: 5rem;
+}
+
+i {
+    color: white;
+}
+.root{
+    &.notVisible{
+        .logo {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    &:not(.notVisible){
+        background: $light;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo {
+        height: 4rem;
+    }
+}

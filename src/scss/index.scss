@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import './colors.scss', './colorsstyles.scss', './bootstrap.scss', './grid.scss', './fontsizes.scss', './buttons.scss', './elevation.scss', './form-card.scss';
+
+:root {
+    --app-height: 100%;
+    --nav-height: 100%;
+}
+*{
+    box-sizing: border-box;
+    font-weight: 400;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: $grey-lighten-3;
+    margin: 0;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    background: rgb(240, 240, 240);
+    color: $grey;
+    position: relative;
+    @extend .no-select;
+    transition: linear 0.2s overflow;
+}
+.card{
+    padding: 3rem;
+    background: $light;
+}
+.z-index-1{
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+}
+.z-index-3{
+    z-index: 3;
+}
+.z-index-4{
+    z-index: 4;
+}
+.z-index-5{
+    z-index: 5;
+}
+.container, .container-v2{
+    width: 89%;
+    margin: 0 auto;
+}
+.container-v2{
+    max-width: 44.1rem;
+}
+.container-p {
+    padding: 0 5.5%;
+}
+.bg-img{
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 991px) {
+    .scrollbar{
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 10px 10px $grey-lighten-3;
+            border: 3.9px solid transparent;
+            &:hover {
+                box-shadow: inset 0 0 10px 10px $grey;
+            }
+        }
+        
+    }
+}
+@media (max-width: 1600px) {
+    body, html {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1300px) {
+    .container, .container-v2{
+        width: calc(100% - 4rem);
+    }
+    .container-p{
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .container, .container-v2{
+        width: calc(100% - 2rem);
+    }
+    .container-p {
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 360px) {
+    body, html{
+        font-size: 13px;
+    }
+}

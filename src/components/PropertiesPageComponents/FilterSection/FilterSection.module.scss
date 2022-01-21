@@ -1,0 +1,46 @@
+@import '../../../scss/colors.scss';
+
+.main {
+    width: 20rem;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.chipsWrapper {
+    >label >span{
+        padding: 0 0 0.25em 0 !important;
+        border-radius: 0;
+        width: 2em;
+        height: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer{
+    width: inherit;
+    padding: inherit;
+    left: inherit;
+}
+
+.logo{
+    width: 4rem;
+}
+
+@media (max-width: 991px) {
+    .main {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+        background: #fff;
+        bottom: 0;
+        left: -100%;
+        transition: linear 0.3s all;
+        &.active {
+            left: 0;
+        }
+    }
+}
