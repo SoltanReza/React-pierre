@@ -6,7 +6,8 @@ import img3 from '../../../assets/3.jpeg'
 import Carousel from '../../../ui/Carousel/Carousel';
 import { Link } from 'react-router-dom';
 import Animate from '../../../ui/Animate/Animate';
-
+import {  SwiperSlide } from 'swiper/react/swiper-react';
+import 'swiper/swiper.scss';
 const PropertiesSection = () => (
     <div className='py-md-5'>
         <div className='my-5 py-5'>
@@ -17,22 +18,22 @@ const PropertiesSection = () => (
                     <small className='small '>Nam dapibus nisl vitea elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in.</small>
                 </Animate>
             </div>
-            <Carousel isSmoothScrolling={false} className={`d-flex gap-md-4 gap-3 mt-5 mb-3 py-md-5 container-e container-p ${styles.properties}`}>
-                <HomeItem url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={0.25} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={0.5} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={0.75} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={1} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={1.25} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={1.5} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={1.75} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={2} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={2.25} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={2.5} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
-                <HomeItem delay={3} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' />
+            <Carousel  >
+                <SwiperSlide ><HomeItem url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={0.25} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={0.5} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={0.75} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={1} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={1.25} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={1.5} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={1.75} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={2} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={2.25} url={img1} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={2.5} url={img2} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
+                <SwiperSlide ><HomeItem delay={3} url={img3} title='agence eyon' description='Donec facilisis tortor ut augue lacinia, at viverra east semper.' /></SwiperSlide>
             </Carousel>
             <div className='container'>
-            <Link to='/' className='btn-text ps-3'> <i className="fas fa-angle-right border-rounded"></i> en swoir plus</Link>
+            <Link to='/moredetails' className='btn-text ps-3'> <i className="fas fa-angle-right border-rounded"></i> en swoir plus</Link>
             </div>
         </div>
     </div>
