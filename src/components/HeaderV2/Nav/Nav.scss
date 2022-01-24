@@ -1,11 +1,19 @@
 @import '../../../scss/colors.scss';
 
-.nav-contaienr {
-   
+.sidebar {
+    height: 100vh ;
+}
+#hamburger-icon {
+    height: 30vh;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+    display: inline-flex;
+
 }
 
-
 .logo {
+    display: none;
     height: 5rem;
 }
 

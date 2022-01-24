@@ -8,11 +8,7 @@ import img5 from '../../../assets/5.jpeg'
 const HeroSection = ({ toggleMenu }) => {
   return (
     <div className="vh-100 tx-light position-relative HomePage-HeroSection">
-      <div
-        onMouseEnter={() => toggleMenu(true)}
-        onMouseLeave={() => toggleMenu(false)}
-        className="hover-column"
-      ></div>
+      {/* <div onMouseOver={() => toggleMenu(true)} className="hover-column"></div> */}
       <HeroItem
         url={img1}
         title="CABINET BONAPARTE"

@@ -26,18 +26,20 @@ const Nav = ({ isMenuOpen, toggleMenu, transparent = true }) => {
   return (
     <nav ref={navRef} className="nav-container">
       <div className=" justify-content-between d-flex align-items-center container nav-height">
-        <button
+        <div
           id="hamburger-icon"
-          className="btn-icon h6 no-spacing"
+          className=" h6 no-spacing"
           onClick={() => toggleMenu(!isMenuOpen)}
+          onMouseOver={() => toggleMenu(true)}
         >
           <i
             className={`fas fa-${isMenuOpen ? "times" : "bars"}  elevation-3`}
           ></i>
-        </button>
+        </div>
         <Link to="/" className="d-flex">
           <img alt="" src={logo} className="logo" />
         </Link>
+
         <Link className="btn-icon h6 no-spacing" to="/register">
           <i className="fas fa-user elevation-3"></i>
         </Link>

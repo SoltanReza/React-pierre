@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import gpt3Logo from "../../assets/logo-white.png";
 import TextField from "../../ui/TextField";
 import "./styles.scss";
@@ -7,7 +8,9 @@ const FooterV2 = () => (
   <footer className="footer">
     <div className="footer-columns">
       <div id="footer-logos" className="footer-list">
-        <img src={gpt3Logo} alt="gpt3_logo" />
+        <Link to="/">
+          <img src={gpt3Logo} alt="gpt3_logo" />{" "}
+        </Link>
         <div className="icons">
           <a href="#" className="icon">
             <img
@@ -16,7 +19,6 @@ const FooterV2 = () => (
             />
           </a>
           <a href="#" className="icon">
-            {" "}
             <img
               src="https://assets.website-files.com/60a69d1ca4992d067a87d66a/60abc3cadb72e20aea9646fe_instagram--white.svg"
               alt="instagram logo"

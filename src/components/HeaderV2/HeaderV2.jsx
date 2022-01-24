@@ -31,7 +31,11 @@ const HeaderV2 = ({ className, transparent, setIsMenuOpen, isMenuOpen }) => {
         isMenuOpen={isMenuOpen}
         toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
       />
-      <NavLinks toggleMenu={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      <NavLinks
+        onMouseOut={() => setIsMenuOpen(!isMenuOpen)}
+        toggleMenu={setIsMenuOpen}
+        isMenuOpen={isMenuOpen}
+      />
     </header>
   );
 };

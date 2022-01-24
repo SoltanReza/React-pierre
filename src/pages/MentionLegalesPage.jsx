@@ -3,28 +3,23 @@ import DataSection from "../components/DataSection/DataSection";
 import FooterV2 from "../components/FooterV2/footerv2";
 import HeaderV2 from "../components/HeaderV2/HeaderV2";
 import { useState } from "react";
+import Cards from "../components/Cards/Cards";
+import Banner from "../components/Banner/Banner";
 
 const MentionLegalesPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <HeaderV2
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isDarken={false}
       />
-      <HeroSection toggleMenu={(e) => setIsMenuOpen(e)} />
-      <DataSection title="Titlre exemple" descrpition="description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quos
-          repellendus soluta repellat quae quo similique cumque commodi est.
-          Voluptates facere maxime consectetur nulla iure commodi excepturi
-          perferendis magnam neque?
-        </p>
-      </DataSection>
+      <Banner />
+      <Cards />
       <FooterV2 />
-    </>
+    </div>
   );
 };
 

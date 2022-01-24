@@ -14,8 +14,7 @@ const MoreDetailsPage = () => {
         setIsMenuOpen={(e) => setIsMenuOpen(e)}
         isDarken={false}
       />
-      <HeroSection toggleMenu={(e) => setIsMenuOpen(e)} />
-      <DataSection title="Titlre exemple" descrpition="description">
+      <DataSection title="Titre exemple" description="description">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quos
           repellendus soluta repellat quae quo similique cumque commodi est.

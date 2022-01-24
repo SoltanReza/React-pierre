@@ -1,9 +1,36 @@
-
 .data-section {
     width: 89%;
     margin: 0 auto;
     padding: 2rem 0;
+    font-size: 1.1rem;
     .data-section-header , .data-section-content {
         color: black;
     }
+    img {
+        margin-top: 5rem;
+    }
+    h2 {
+        font-weight: bold;
+        color: rgba(40, 53, 128, 1);;
+    }
+    .description{
+        color: gray;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .data-section {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 80vw;
+            margin: auto;
+            margin-top: 5rem;
+            align-self: flex-start;
+        }
+
+}
+    
 }

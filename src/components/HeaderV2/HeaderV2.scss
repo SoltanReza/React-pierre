@@ -1,6 +1,10 @@
 $height: 6rem;
 
 .nav-height {
+    position:absolute;
+    width: 100%;
+    padding: 0 5%;
+    margin: auto;
     height: $height;
     &.active {
         height: $height - 1rem;
@@ -16,13 +20,11 @@ $height: 6rem;
     transition-delay: 0.3s;
     max-height: $height;
     &, * {
-        transition: linear 0.3s all;
+        transition: linear 0.5s all;
     }
     &.active {
         max-height: 100vh;
-        .nav-height {
-            height: $height - 1rem;
-        }
+
     }
 }
 
