@@ -1,6 +1,5 @@
 import React from "react";
-
-
+import "./styles.scss";
 
 export default function DataSection(props) {
   return (
@@ -9,9 +8,8 @@ export default function DataSection(props) {
         <h2>{props.title}</h2>
         <p>{props.description}</p>
       </div>
-      <div className="data-section-content">
-        {props.children}
-      </div>
+      <div className="data-section-content">{props.children}</div>
     </div>
   );
 }
+

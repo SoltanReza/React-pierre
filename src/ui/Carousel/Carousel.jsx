@@ -9,19 +9,20 @@ SwiperCore.use([Autoplay]);
 export default function Carousel ({children})  {
 
     return (
-        <Swiper
+      <Swiper
         spaceBetween={50}
         slidesPerView={4}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-         >
-            {children}
-        </Swiper>
-    )
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        style={{ width: "89%", margin: "2rem auto" }}
+      >
+        {children}
+      </Swiper>
+    );
 }
 

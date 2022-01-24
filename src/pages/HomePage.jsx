@@ -10,23 +10,30 @@ import JoinUsSection from "../components/HomePageComponents/JoinUsSection/JoinUs
 import Footer from "../components/Footer/Footer";
 import FooterV2 from "../components/FooterV2/footerv2";
 import HeaderV2 from "../components/HeaderV2/HeaderV2";
+import { useState } from "react";
 
 const HomePage = () => {
-    return (
-        <>
-            <HeaderV2 isDarken={false} />
-            <HeroSection />
-            {/* <FormSection /> */}
-            <AboutUsSection />
-            <AgenciesSection />
-            <PropertiesSection />
-            <PropertyAddressSection />
-            <NewsSection />
-            <ContactUsSection />
-            <JoinUsSection />
-            <FooterV2 />
-        </>
-    )
-}
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <>
+      <HeaderV2
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        isDarken={false}
+      />
+      <HeroSection toggleMenu={(e) => setIsMenuOpen(e)} />
+      {/* <FormSection /> */}
+      <AboutUsSection />
+      <AgenciesSection />
+      <PropertiesSection />
+      <PropertyAddressSection />
+      <NewsSection />
+      <ContactUsSection />
+      <JoinUsSection />
+      <FooterV2 />
+    </>
+  );
+};
 
 export default HomePage;

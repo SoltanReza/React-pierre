@@ -1,4 +1,4 @@
-$height: 7rem;
+$height: 6rem;
 
 .nav-height {
     height: $height;
@@ -10,6 +10,9 @@ $height: 7rem;
     padding-top: $height;
 }
 .HeaderV2 {
+    position: sticky;
+    top: 0;
+    z-index: 4;
     transition-delay: 0.3s;
     max-height: $height;
     &, * {

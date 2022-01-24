@@ -4,14 +4,14 @@ import FooterV2 from "../components/FooterV2/footerv2";
 import HeaderV2 from "../components/HeaderV2/HeaderV2";
 import { useState } from "react";
 
-const MoreDetailsPage = () => {
+const MentionLegalesPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
       <HeaderV2
         isMenuOpen={isMenuOpen}
-        setIsMenuOpen={(e) => setIsMenuOpen(e)}
+        setIsMenuOpen={setIsMenuOpen}
         isDarken={false}
       />
       <HeroSection toggleMenu={(e) => setIsMenuOpen(e)} />
@@ -28,4 +28,4 @@ const MoreDetailsPage = () => {
   );
 };
 
-export default MoreDetailsPage;
+export default MentionLegalesPage;

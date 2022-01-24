@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import { Document, Page, pdfjs } from '@react-pdf/renderer';
-// import { pdfjs } from '@react-pdf/renderer';
 import "./styles.css";
-import { Document, Page, pdfjs, StyleSheet} from 'react-pdf';
+import { Document, Page, pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 export default function AllPages(props) {
@@ -13,16 +11,24 @@ export default function AllPages(props) {
   }
 
   const { pdf } = props;
-
   return (
     <Document
       file={pdf}
-      options={{ workerSrc: '../pdf.worker.js'}}
+      options={{ workerSrc: "../pdf.worker.js" }}
       onLoadSuccess={onDocumentLoadSuccess}
     >
       {Array.from(new Array(numPages), (el, index) => (
-       
- <Page key={`page_${index + 1}`} pageNumber={index + 1}/>
+        <Page
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          key={`page_${index + 1}`}
+          pageNumber={index + 1}
+        />
       ))}
     </Document>
   );

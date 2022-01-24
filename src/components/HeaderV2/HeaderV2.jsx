@@ -3,27 +3,37 @@ import './HeaderV2.scss';
 import Nav from './Nav/Nav';
 import NavLinks from './NavLinks/NavLinks';
 
-const HeaderV2 = ({ className, transparent }) => {
+const HeaderV2 = ({ className, transparent, setIsMenuOpen, isMenuOpen }) => {
+  const [background, setBackground] = useState("transparent");
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+  const listenScrollEvent = (e) => {
+    if (window.scrollY > 400) {
+      setBackground("gray");
+    } else {
+      setBackground("transparent");
+    }
+  };
 
-    useEffect(() => {
-        return () => document.body.style.overflow = '';
-    }, [])
-    
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
 
-    return (
-        <header className={`
+  return (
+    <header
+      className={`
+                HeaderV2
                 ${className}
-                d-flex flex-column h-100 tx-dark
-                start-0 w-100 top-0 z-index-4 position-fixed HeaderV2
-                ${isMenuOpen ? `active bg-light tx-dark` : ''}`}
-        >
-            <Nav transparent={transparent} isMenuOpen={isMenuOpen} toggleMenu={() => setIsMenuOpen(!isMenuOpen)} />
-            <NavLinks isMenuOpen={isMenuOpen} />
-        </header>
-    )
-}
+                // ${isMenuOpen ? `active bg-light tx-dark` : ""}`}
+      style={{ backgroundColor: background }}
+    >
+      <Nav
+        transparent={transparent}
+        isMenuOpen={isMenuOpen}
+        toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
+      />
+      <NavLinks toggleMenu={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+    </header>
+  );
+};
 
 export default HeaderV2;

@@ -1,5 +1,37 @@
 @import '../../../scss/colors.scss';
-
+.nav-links-container {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    left: -400px;
+    max-width: 30%; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    transition: 0.3 ease all;
+    i {
+        color: black;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        cursor: pointer;
+    }
+    &.active {
+        left: 0;
+    }
+    h2 { 
+        margin: 1rem 0;
+    }
+    ul {
+        list-style: none;
+        li {
+            cursor: pointer;
+        }
+    }
+}
 .root{
     transition: linear 0.3s all;
     max-height: 1000px;
@@ -10,6 +42,7 @@
         visibility: hidden;
     }
 }
+
 
 .links{
     padding: 4rem;
