@@ -4,7 +4,7 @@ import "./Nav.scss";
 import { useRef } from "react";
 import { useEffect } from "react/cjs/react.development";
 
-const Nav = ({ isMenuOpen, toggleMenu, transparent }) => {
+const Nav = ({ isMenuOpen, toggleMenu, transparent, showLogo }) => {
   const navRef = useRef();
   return (
     <nav ref={navRef} className="nav-container">
@@ -23,7 +23,12 @@ const Nav = ({ isMenuOpen, toggleMenu, transparent }) => {
           ></i>
         </div>
         <Link to="/" className="d-flex">
-          <img alt="" src={logo} className="logo" />
+          <img
+            alt=""
+            style={{ display: showLogo ? "block" : "none" }}
+            src={logo}
+            className="logo"
+          />
         </Link>
 
         <Link className="btn-icon h6 no-spacing" to="/register">

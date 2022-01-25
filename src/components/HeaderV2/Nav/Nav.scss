@@ -13,8 +13,11 @@
 }
 
 .logo {
-    display: none;
     height: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
 }
 
 .nav-container {
