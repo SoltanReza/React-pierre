@@ -3,7 +3,10 @@ import "./NavLinks.scss";
 
 const NavLinks = ({ isMenuOpen, toggleMenu }) => {
   return (
-    <div className={`nav-links-container ${isMenuOpen ? "active" : ""}`}>
+    <div
+      onMouseLeave={() => toggleMenu(false)}
+      className={`nav-links-container ${isMenuOpen ? "active" : ""}`}
+    >
       <div className="">
         <i onClick={() => toggleMenu(false)} class="fas fa-times fa-2x"></i>
         <div className="menu-container">

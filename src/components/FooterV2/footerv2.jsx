@@ -13,22 +13,13 @@ const FooterV2 = () => (
         </Link>
         <div className="icons">
           <a href="#" className="icon">
-            <img
-              src="https://assets.website-files.com/60a69d1ca4992d067a87d66a/60abc3ca2e2360227b8328f6_facebook--white.svg"
-              alt="facebook logo"
-            />
+            <img src="facebook-white.png" alt="facebook logo" />
           </a>
           <a href="#" className="icon">
-            <img
-              src="https://assets.website-files.com/60a69d1ca4992d067a87d66a/60abc3cadb72e20aea9646fe_instagram--white.svg"
-              alt="instagram logo"
-            />
+            <img src="instagram-white.png" alt="instagram logo" />
           </a>
           <a href="#" className="icon">
-            <img
-              src="https://assets.website-files.com/60a69d1ca4992d067a87d66a/60abc3cacb9ab7702f626e20_linkedin--white.svg"
-              alt="linkedin logo"
-            />
+            <img src="linkedin-white.png" alt="linkedin logo" />
           </a>
         </div>
       </div>

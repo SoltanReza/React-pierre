@@ -21,6 +21,7 @@ const HomePage = () => {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isDarken={false}
+        transparent={true}
       />
       <HeroSection toggleMenu={(e) => setIsMenuOpen(e)} />
       {/* <FormSection /> */}

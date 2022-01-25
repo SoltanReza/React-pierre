@@ -1,23 +1,22 @@
 .cards-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 2rem;
     padding: 2rem 0;
     // background: rgba(40, 53, 128, 1);
 }
 .card {
     background: white;
     padding:1rem 2rem ;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
     text-align: left;
     min-width: 23%;
-    border-radius: 1rem;
     box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.1);
     h2 {
-
         color: seagreen;
         font-weight: bolder;
         border-bottom: 1px solid gray;
@@ -37,9 +36,16 @@
             font-size: 1rem;
             color: black;
             span {
-                font-size: 1.1;
-                font-weight: bold;
+                font-size: 1.1rem;
+                font-weight: bolder;
             }
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+    

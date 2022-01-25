@@ -9,6 +9,12 @@
   width: 200;
   background-color: red;
 } */
+
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  
+}
 .react-pdf__Page {
     margin-top: 10px;
   }

@@ -5,7 +5,7 @@
 }
 #hamburger-icon {
     height: 30vh;
-    width: 30%;
+    width: 25%;
     align-items: center;
     justify-content: flex-start;
     display: inline-flex;
@@ -17,8 +17,10 @@
     height: 5rem;
 }
 
-i {
-    color: white;
+.nav-container {
+    i {
+        color: white;
+    }
 }
 // .root{
 //     &.notVisible{

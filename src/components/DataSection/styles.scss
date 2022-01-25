@@ -1,4 +1,6 @@
 .data-section {
+    display: flex;
+    flex-direction: column;
     width: 89%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -7,6 +9,7 @@
         color: black;
     }
     img {
+        margin: auto;
         margin-top: 5rem;
     }
     h2 {
