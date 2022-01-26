@@ -8,18 +8,20 @@ const PropertyPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="tx-dark nav-padding">
+    <>
       <HeaderV2
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={(e) => setIsMenuOpen(e)}
         transparent={false}
       />
-      <Slider />
-      <div className="container my-5 py-md-5">
-        <MainSection />
-        <ProfileSection />
+      <div className="tx-dark nav-padding">
+        <Slider />
+        <div className="container my-5 py-md-5">
+          <MainSection />
+          <ProfileSection />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

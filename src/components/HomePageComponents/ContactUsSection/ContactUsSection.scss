@@ -29,13 +29,8 @@
         display: none;
     }
     .main {
-        margin-left: 10rem;
+        padding: 1rem ;
     }
 }
-@media  screen and (max-width: 450px) {
-    .main {
-        margin-left: 7rem;
-        width: 100%;
-    }
-}
+
     

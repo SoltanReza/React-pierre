@@ -18,17 +18,7 @@ export default function AllPages(props) {
       onLoadSuccess={onDocumentLoadSuccess}
     >
       {Array.from(new Array(numPages), (el, index) => (
-        <Page
-          style={{
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          key={`page_${index + 1}`}
-          pageNumber={index + 1}
-        />
+        <Page scale={1.2} key={`page_${index + 1}`} pageNumber={index + 1} />
       ))}
     </Document>
   );

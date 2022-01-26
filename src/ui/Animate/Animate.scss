@@ -104,6 +104,13 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    .__Animate.right {
+        left: 0;
+    }
+}
+    
+
 @keyframes RightAnimation {
     0%{
         // left: 5rem;
