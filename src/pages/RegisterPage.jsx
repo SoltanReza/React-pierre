@@ -24,7 +24,7 @@ const RegisterPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="d-flex min-vh-100 nav-padding pb-5 mt-md-3 tx-dark bg-sm-light">
+        <div className="d-flex min-vh-100 nav-padding pb-5  tx-dark bg-sm-light">
           <form
             className="container p-lg-5 p-md-4 m-auto d-flex flex-column gap-md-5 gap-md-4 gap-3 "
             style={style}
