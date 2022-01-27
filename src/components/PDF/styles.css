@@ -13,7 +13,12 @@
 
 .react-pdf__Page__canvas {
   margin: 0 auto;
+  max-width: 100% !important;
+  height: auto !important;
+}
+.react-pdf__Document {
 
+  overflow: scroll;
 }
 .react-pdf__Page {
     margin-top: 10px;
@@ -38,3 +43,7 @@
     max-height: 500px;
     overflow: auto;
   }
+
+
+    
+  
