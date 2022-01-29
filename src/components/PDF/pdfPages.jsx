@@ -23,7 +23,7 @@ export default function AllPages(props) {
     >
       {Array.from(new Array(numPages), (el, index) => (
         <Page
-          scale={width > 760 ? 1.2 : 0.4}
+          // scale={width > 760 ? 1.2 : 0.4}
           key={`page_${index + 1}`}
           pageNumber={index + 1}
         />

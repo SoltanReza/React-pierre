@@ -1,17 +1,9 @@
 .HomePage-HeroSection {
     position: fixed;
     width: 100%;
-    min-height: 450px;
+    min-height: fit-content;
     margin-bottom: -2.75rem;
     padding-bottom: 2.75rem;
-    .hover-column {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 30%;
-        z-index: 3;
-    }
     >div {
         animation: 20s infinite linear BackGroundImages;
         opacity: 0;
