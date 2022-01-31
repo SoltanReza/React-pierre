@@ -1,6 +1,7 @@
 .root{
     transition: linear 0.3s all;
-    overflow: auto hidden;
+    overflow:  hidden;
+    background-color: white;
     &::-webkit-scrollbar {
         height: 0;
     }
@@ -15,4 +16,13 @@
             display: none;
         }
     }
+
+}
+.myVideo {
+    position: absolute;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 100%;
+    z-index: 1;
 }

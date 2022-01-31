@@ -18,7 +18,6 @@ const Menu = ({ children = [], value, onClose, isNormal, ...props }) => {
         if (!child || !parent) return;
         const styles = child.style;
         const rect = parent.getBoundingClientRect();
-        console.log(rect);
         styles.left = rect.left + 'px';
         styles.width = rect.width + 'px'
         styles.top = (rect.y - document.body.getBoundingClientRect().y) + 'px';

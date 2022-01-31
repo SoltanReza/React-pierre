@@ -1,0 +1,62 @@
+.informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    &-title {
+        font-weight: bolder;
+        flex: 1;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            color: #c5c5c5;
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 3rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        a {
+            cursor: pointer;
+            transition: ease 0.4s ;
+            margin-left: 0;
+            &:hover {
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-descriptions {
+        color: #3c3c3c;
+        font-size: 1.2rem;
+        flex: 1.5;
+       &-table {
+           display: grid;
+           width: 100%;
+           height: 100%;
+           margin-top: 1rem;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 1rem;
+
+           .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .key {
+                    font-size: 0.9rem;
+                    font-weight: bolder;
+                    color: #3c3c3c;
+                }
+                .value {
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    color: black;
+                }
+           }
+       }
+    }
+}

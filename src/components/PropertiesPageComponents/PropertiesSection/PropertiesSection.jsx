@@ -1,26 +1,33 @@
-import HomeItemV2 from '../../HomeItemV2/HomeItemV2';
+import Animate from "../../../ui/Animate/Animate";
+import HomeItemV2 from "../../HomeItemV2/HomeItemV2";
+import "./PropertiesSection.scss";
 
 const PropertiesSection = () => {
-    return (
-        <div className='d-grid gap-lg-5 gap-md-4 gap-3 col-xxl-4 overflow-auto col-xl-3 col-md-2 flex-1 p-3 p-xl-5 p-md-4'>
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
-            <HomeItemV2 />
+  return (
+    <>
+      <Animate type="bottom" className="tx-dark nav-padding">
+        <h2 className=" h2 text-center ">Propriétaires</h2>
+        <div className="properties-wrapper">
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
+          <HomeItemV2 />
         </div>
-    )
-}
+      </Animate>
+    </>
+  );
+};
 
 export default PropertiesSection;

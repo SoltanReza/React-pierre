@@ -16,7 +16,6 @@ export default function Carousel({ children }) {
       spaceBetween={50}
       slidesPerView={width > 768 ? 4 : 1.5}
       onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
       autoplay={{
         delay: 4000,
         disableOnInteraction: false,

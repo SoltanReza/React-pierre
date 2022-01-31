@@ -8,17 +8,25 @@
     .data-section-header , .data-section-content {
         color: black;
     }
-    img {
+    .img-container {
         width: 89%;
         margin: auto;
         margin-top: 5rem;
     }
     h2 {
         font-weight: bold;
-        color: rgba(40, 53, 128, 1);;
+        font-size: 2rem;
+        color: rgba(40, 53, 128, 1);
+        margin-bottom: 0;
+
     }
     .description{
+        font-size: 1.2em;
         color: gray;
+    }
+    .data-section-content {
+        width: 60%;
+        margin: auto;
     }
 }
 

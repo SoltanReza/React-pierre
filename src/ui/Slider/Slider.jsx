@@ -8,6 +8,7 @@ const Slider = ({
   isSmoothScrolling = true,
   isTouchScrolling = true,
   showArrows = false,
+  showVideo = false,
   ...props
 }) => {
   const slider = useRef(null);
@@ -78,8 +79,14 @@ const Slider = ({
     sliderProps.onPointerMove = onMouseMove;
     sliderProps.onPointerUp = onMouseUp;
   }
+
   return (
     <div className="position-relative" {...props}>
+      {showVideo && (
+        <video muted autoPlay loop id="myVideo" className={`${styles.myVideo}`}>
+          <source src="/bonaparte.mp4" type="video/mp4" />
+        </video>
+      )}
       <div {...sliderProps}>
         {children}
         {component && component({ onNext, onPrevious })}

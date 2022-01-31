@@ -1,6 +1,7 @@
 @import '../../scss/colors.scss';
 
 .FormField-Root{
+    cursor: text;
     gap: 0.5em;
     color: $grey;
     &:not(.FormField-Root-Normal) {

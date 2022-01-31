@@ -9,7 +9,7 @@ const NavLinks = ({ isMenuOpen, toggleMenu }) => {
     >
       <div className="">
         <i onClick={() => toggleMenu(false)} class="fas fa-times fa-2x"></i>
-        <div className="menu-container">
+        <div onClick={() => toggleMenu(false)} className="menu-container">
           <div className="">
             <h2 className="h2">Auth</h2>
             <ul>

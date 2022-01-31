@@ -13,10 +13,10 @@ const PropertiesPage = () => {
         setIsMenuOpen={setIsMenuOpen}
         transparent={false}
       />
-      <div className="tx-dark flex-1 d-lg-flex nav-padding">
-        <FilterSection />
-        <PropertiesSection />
-      </div>
+      {/* <div className="tx-dark flex-1 d-lg-flex nav-padding"> */}
+      {/* <FilterSection /> */}
+      <PropertiesSection />
+      {/* </div> */}
     </>
   );
 };

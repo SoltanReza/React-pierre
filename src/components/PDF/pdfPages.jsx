@@ -8,7 +8,6 @@ export default function AllPages(props) {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
-    console.log(width);
   }, []);
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);

@@ -7,7 +7,6 @@ import PropertyAddressSection from "../components/HomePageComponents/PropertyAdd
 import NewsSection from "../components/HomePageComponents/NewsSection/NewsSection";
 import ContactUsSection from "../components/HomePageComponents/ContactUsSection/ContactUsSection";
 import JoinUsSection from "../components/HomePageComponents/JoinUsSection/JoinUsSection";
-import Footer from "../components/Footer/Footer";
 import FooterV2 from "../components/FooterV2/footerv2";
 import HeaderV2 from "../components/HeaderV2/HeaderV2";
 import { useState } from "react";

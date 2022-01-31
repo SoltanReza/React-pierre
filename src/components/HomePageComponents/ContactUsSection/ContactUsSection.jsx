@@ -5,6 +5,7 @@ import "./ContactUsSection.scss";
 const ContactUsSection = () => {
   return (
     <div
+      id="contact-us"
       className={` container mb-5 pb-5 d-flex align-items-center justify-content-center`}
     >
       <Animate type="left" className={`img z-index-1 `}></Animate>

@@ -10,6 +10,7 @@ const AgenciesSection = () => {
     <Slider
       isTouchScrolling={false}
       className="d-flex"
+      showVideo
       component={(props) => (
         <>
           <SliderItem

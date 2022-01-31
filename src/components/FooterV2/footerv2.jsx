@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import gpt3Logo from "../../assets/logo-white.png";
-import TextField from "../../ui/TextField";
 import "./styles.scss";
 
 const FooterV2 = () => (
@@ -13,13 +12,13 @@ const FooterV2 = () => (
         </Link>
         <div className="icons">
           <a href="#" className="icon">
-            <img src="facebook-white.png" alt="facebook logo" />
+            <img src="/facebook-white.png" alt="facebook logo" />
           </a>
           <a href="#" className="icon">
-            <img src="instagram-white.png" alt="instagram logo" />
+            <img src="/instagram-white.png" alt="instagram logo" />
           </a>
           <a href="#" className="icon">
-            <img src="linkedin-white.png" alt="linkedin logo" />
+            <img src="/linkedin-white.png" alt="linkedin logo" />
           </a>
         </div>
       </div>
@@ -28,7 +27,9 @@ const FooterV2 = () => (
         <li>Overons</li>
         <li>Social Media</li>
         <li>Counters</li>
-        <li>Contact</li>
+        <li>
+          <a href="/#contact-us"> Contact</a>
+        </li>
         <li>
           <a href="/mentions-legales">Mentions legales</a>
         </li>
@@ -40,7 +41,9 @@ const FooterV2 = () => (
         <h4>Company</h4>
         <li>Terms & Conditions </li>
         <li>Privacy Policy</li>
-        <li>Contact</li>
+        <li>
+          <a href="/#contact-us"> Contact</a>
+        </li>
       </ul>
       <ul id="form" className="footer-list">
         <h4>Get in touch</h4>
